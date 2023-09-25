@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto | Avaliação de Suficiência</title>
+    <script src="https://kit.fontawesome.com/1991558226.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="body">
+    <div class="head__menu__overlay" id="overlay"></div>
+
+    <div class="modal__search" id="modal-search">
+      <div class="modal__search__overlay" id="search-overlay"></div>
+      <div class="modal__search__container">
+        <i class="fa-solid fa-xmark close-button" id="close-search"></i>
+        <form id="search-form">
+          <div class="head__form__input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="query" placeholder="Search...">
+          </div>
+
+          <div class="head__form__container">
+            <div class="head__form__input">
+              <input type="date" name="date" />
+            </div>
+
+            <button type="submit" id="search-submit">
+              <i class="fa-solid fa-filter"></i> Apply Filters
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal__add" id="modal-add">
+      <div class="modal__add__overlay" id="add-overlay"></div>
+      <div class="modal__add__container">
+        <i class="fa-solid fa-xmark close-button" id="close-add"></i>
+        <form id="add-form">
+          <div class="head__form__input">
+            <input type="text" name="title" placeholder="Post Title">
+          </div>
+          <p>Title Field is Required!</p>
+          
+          <div class="head__form__container">
+            <div class="head__form__input">
+              <textarea rows="6" name="content" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere pulvinar arcu. Donec scelerisque auctor nulla sed congue. Proin cursus consequat nibh et fermentum. Sed risus mauris..."></textarea>
+            </div>
+            <p>Content Field is Required!</p>
+
+            <button type="submit" id="add-submit">
+              <i class="fa-solid fa-plus"></i> Add Post
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="head">
+      <div class="head__container">
+        <h1>Some webpage</h1>
+
+        <div class="head__menu">
+          <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>Menu
+          </button>
+          <div class="head__menu-popup" id="menu-popup">
+            <p id="add-btn">
+              <i class="fa-solid fa-plus"></i> New Post
+            </p>
+            <p id="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </p>
+          </div>
+        </div>
+
+        <div class="head__socials">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </section>
+
+    <section class="content">
+      <div class="content__container">
+      </div>
+    </section>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
